@@ -1,5 +1,6 @@
 {
   "name": "restaurant_website",
+  "homepage": "https://wizzy-design.github.io/restaurant_website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,8 @@
     "styled-components": "^5.3.10"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -35,6 +38,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "web-vitals": "^3.3.1"
   }
 }
