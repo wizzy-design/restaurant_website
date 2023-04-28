@@ -18,7 +18,7 @@ const Home = () => {
   );
 };
 
-// Styled components & Keyframe
+// Animation Keyframes
 const zoomInOut = keyframes`
     0%, 100%{
         transform: scale(1);
@@ -28,6 +28,7 @@ const zoomInOut = keyframes`
     }
 `;
 
+// Styled components
 const Page = styled.div`
   position: relative;
   height: 100vh;
@@ -62,31 +63,6 @@ const PageContent = styled.div`
       font-family: "Dancing Script", cursive;
       line-height: 75px;
       margin: 0 0 5px;
-    }
-
-    p {
-      margin: 0 0 30px;
-      font-family: "Poppins", sans-serif;
-    }
-  }
-
-  button {
-    /* width: 10rem; */
-    padding: 10px 30px;
-    border-radius: 30px;
-    border: 4px solid #eaa023;
-    background: transparent;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    transition: all 0.3s ease;
-    color: #eaa023;
-    outline: none;
-    cursor: pointer;
-    line-height: 1.5;
-
-    &:hover {
-      background: #eaa023;
-      color: white;
     }
   }
 `;

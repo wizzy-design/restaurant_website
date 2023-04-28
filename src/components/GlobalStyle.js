@@ -20,7 +20,30 @@ const GlobalStyle = createGlobalStyle`
   }
 
   p{
-    color: white;
+    margin: 0 0 30px;
+    font-family: "Poppins", sans-serif;
+    color: #c8c8c8;
+    font-weight: 300;
+  }
+
+  button {
+    /* width: 10rem; */
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 3px solid #eaa023;
+    background: transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: #eaa023;
+    outline: none;
+    cursor: pointer;
+    line-height: 1.5;
+
+    &:hover {
+      background: #eaa023;
+      color: white;
+    }
   }
 
   h1{
@@ -29,6 +52,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h2{
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     color: white;
   }
@@ -37,6 +61,28 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 500;
     color: white;
   }
+
+/* Scrollbar */
+
+  * {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+  }
+
+*::-webkit-scrollbar {
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}
+
 `;
 
 export default GlobalStyle;

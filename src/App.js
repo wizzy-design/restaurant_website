@@ -21,6 +21,7 @@ function App() {
       <GlobalStyle />
       {/* <Nav /> */}
       <Home />
+      <AboutUs />
 
       {/* Router that navigates pages */}
       {/* <Routes location={location} key={location.pathname}>
