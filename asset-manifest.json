@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.js": "/restaurant_website/static/js/main.3c8e24fd.js",
+    "main.js": "/restaurant_website/static/js/main.70dd7408.js",
     "static/js/496.5f73d038.chunk.js": "/restaurant_website/static/js/496.5f73d038.chunk.js",
+    "static/media/drink3.jpg": "/restaurant_website/static/media/drink3.3c8a377ece1ffa8e1a33.jpg",
+    "static/media/desert3.jpg": "/restaurant_website/static/media/desert3.044d11765c73f80b41a3.jpg",
+    "static/media/drink1.jpg": "/restaurant_website/static/media/drink1.9c140154a314ed631a9c.jpg",
+    "static/media/drink2.jpg": "/restaurant_website/static/media/drink2.21266c7b0d727ec96282.jpg",
+    "static/media/desert2.jpg": "/restaurant_website/static/media/desert2.6699d75cfbc28ed9abac.jpg",
+    "static/media/desert1.jpg": "/restaurant_website/static/media/desert1.2157649f4832c9aaddfb.jpg",
+    "static/media/drink4.jpg": "/restaurant_website/static/media/drink4.eda468f6e8bb93a162d9.jpg",
     "static/media/home-bg.jpg": "/restaurant_website/static/media/home-bg.fa55a3fdf394e0525464.jpg",
+    "static/media/lunch3.jpg": "/restaurant_website/static/media/lunch3.4f750c25aa1b999e77c8.jpg",
     "static/media/about-img.jpg": "/restaurant_website/static/media/about-img.141c9fa5bbd538fcac5a.jpg",
     "static/media/2.jpg": "/restaurant_website/static/media/2.e223175525aa045d0176.jpg",
     "static/media/7.jpg": "/restaurant_website/static/media/7.f45c2e50ec6ec49806a9.jpg",
     "static/media/4.jpg": "/restaurant_website/static/media/4.3381be6727b1255f0390.jpg",
     "static/media/8.jpg": "/restaurant_website/static/media/8.598f54b6c5c938c8ebc3.jpg",
     "static/media/5.jpg": "/restaurant_website/static/media/5.f52737d2ccf5754e84e5.jpg",
-    "static/media/3.jpg": "/restaurant_website/static/media/3.6085968c4ed0bb316a2f.jpg",
     "static/media/6.jpg": "/restaurant_website/static/media/6.53ab1742b6c5b7e9f5f5.jpg",
     "static/media/1.jpg": "/restaurant_website/static/media/1.d10c25732073445f7ba6.jpg",
     "index.html": "/restaurant_website/index.html",
-    "main.3c8e24fd.js.map": "/restaurant_website/static/js/main.3c8e24fd.js.map",
+    "main.70dd7408.js.map": "/restaurant_website/static/js/main.70dd7408.js.map",
     "496.5f73d038.chunk.js.map": "/restaurant_website/static/js/496.5f73d038.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3c8e24fd.js"
+    "static/js/main.70dd7408.js"
   ]
 }
