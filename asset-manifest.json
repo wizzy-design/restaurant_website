@@ -1,14 +1,22 @@
 {
   "files": {
-    "main.js": "/restaurant_website/static/js/main.855dca00.js",
+    "main.js": "/restaurant_website/static/js/main.3c8e24fd.js",
     "static/js/496.5f73d038.chunk.js": "/restaurant_website/static/js/496.5f73d038.chunk.js",
     "static/media/home-bg.jpg": "/restaurant_website/static/media/home-bg.fa55a3fdf394e0525464.jpg",
     "static/media/about-img.jpg": "/restaurant_website/static/media/about-img.141c9fa5bbd538fcac5a.jpg",
+    "static/media/2.jpg": "/restaurant_website/static/media/2.e223175525aa045d0176.jpg",
+    "static/media/7.jpg": "/restaurant_website/static/media/7.f45c2e50ec6ec49806a9.jpg",
+    "static/media/4.jpg": "/restaurant_website/static/media/4.3381be6727b1255f0390.jpg",
+    "static/media/8.jpg": "/restaurant_website/static/media/8.598f54b6c5c938c8ebc3.jpg",
+    "static/media/5.jpg": "/restaurant_website/static/media/5.f52737d2ccf5754e84e5.jpg",
+    "static/media/3.jpg": "/restaurant_website/static/media/3.6085968c4ed0bb316a2f.jpg",
+    "static/media/6.jpg": "/restaurant_website/static/media/6.53ab1742b6c5b7e9f5f5.jpg",
+    "static/media/1.jpg": "/restaurant_website/static/media/1.d10c25732073445f7ba6.jpg",
     "index.html": "/restaurant_website/index.html",
-    "main.855dca00.js.map": "/restaurant_website/static/js/main.855dca00.js.map",
+    "main.3c8e24fd.js.map": "/restaurant_website/static/js/main.3c8e24fd.js.map",
     "496.5f73d038.chunk.js.map": "/restaurant_website/static/js/496.5f73d038.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.855dca00.js"
+    "static/js/main.3c8e24fd.js"
   ]
 }
