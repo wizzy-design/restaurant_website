@@ -22,7 +22,7 @@ function App() {
       {/* <Nav /> */}
       <Home />
       <AboutUs />
-      <Menu />
+      <Menu/>
 
       {/* Router that navigates pages */}
       {/* <Routes location={location} key={location.pathname}>

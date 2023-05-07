@@ -8,7 +8,7 @@ const FoodItem = (props) => {
       </div>
 
       <div className="details">
-        <p>Lunch Item</p>
+        <p>{props.meal} Item</p>
         <p id="price">$40.00</p>
       </div>
     </Parent>
