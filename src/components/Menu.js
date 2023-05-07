@@ -5,7 +5,7 @@ import FoodItem from "./FoodItem";
 // Images
 import one from "../img/menu/1.jpg";
 import two from "../img/menu/2.jpg";
-import three from "../img/menu/3.jpg";
+// import three from "../img/menu/3.jpg";
 import four from "../img/menu/4.jpg";
 import five from "../img/menu/5.jpg";
 import six from "../img/menu/6.jpg";
