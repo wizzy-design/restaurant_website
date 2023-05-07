@@ -26,11 +26,11 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
   }
 
-  button {
+  button.btn {
     /* width: 10rem; */
-    padding: 10px 30px;
+    padding: 8px 30px;
     border-radius: 30px;
-    border: 3px solid #eaa023;
+    border: 2px solid #eaa023;
     background: transparent;
     font-family: "Poppins", sans-serif;
     font-weight: 500;

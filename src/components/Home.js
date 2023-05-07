@@ -12,7 +12,7 @@ const Home = () => {
             excepturi nostrum placeat atque maxime?
           </p>
         </div>
-        <button>Our Menu</button>
+        <button className="btn">Our Menu</button>
       </PageContent>
     </Page>
   );

@@ -24,7 +24,7 @@ const AboutUs = () => {
             expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Natus, illum!
           </p>
-          <button>Check Our Menu</button>
+          <button className="btn">Check Our Menu</button>
         </div>
 
         <div className="image">
@@ -52,7 +52,7 @@ const spin = keyframes`
 const About = styled.div`
   padding: 5rem 6rem;
   /* min-height: 100vh; */
-  background-color: #191f3a;
+  background-color: #0c1023; // #191f3a
 
   .about-title {
     padding: 0 0 3rem 0;
