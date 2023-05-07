@@ -11,6 +11,14 @@ import five from "../img/menu/5.jpg";
 import six from "../img/menu/6.jpg";
 import seven from "../img/menu/7.jpg";
 import eight from "../img/menu/8.jpg";
+import drink1 from "../img/menu/drink1.jpg";
+import drink2 from "../img/menu/drink2.jpg";
+import drink3 from "../img/menu/drink3.jpg";
+import drink4 from "../img/menu/drink4.jpg";
+import desert1 from "../img/menu/desert1.jpg";
+import desert2 from "../img/menu/desert2.jpg";
+import desert3 from "../img/menu/desert3.jpg";
+import lunch4 from "../img/menu/lunch3.jpg";
 
 const Menu = () => {
   const [activeTab, setActiveTab] = useState("lunch");
@@ -59,13 +67,13 @@ const Menu = () => {
             <div className="first-column">
               <FoodItem image={one} meal="Lunch" />
               <FoodItem image={two} meal="Lunch" />
-              <FoodItem image={three} meal="Lunch" />
-              <FoodItem image={four} meal="Lunch" noBorder={true} />
+              {/* <FoodItem image={three} meal="Lunch" /> */}
+              <FoodItem image={seven} meal="Lunch" />
+              <FoodItem image={lunch4} meal="Lunch" noBorder={true} />
             </div>
             <div className="second-column">
               <FoodItem image={five} meal="Lunch" />
               <FoodItem image={six} meal="Lunch" />
-              <FoodItem image={seven} meal="Lunch" />
               <FoodItem image={eight} meal="Lunch" noBorder={true} />
             </div>
           </div>
@@ -93,16 +101,12 @@ const Menu = () => {
         {activeTab === "drinks" && (
           <div className="menu-content" id="drinks">
             <div className="first-column">
-              {/* <FoodItem image={four} meal="Drink" /> */}
-              <FoodItem image={one} meal="Drink" />
-              <FoodItem image={three} meal="Drink" />
-              <FoodItem image={two} meal="Drink" noBorder={true} />
+              <FoodItem image={drink1} meal="Drink" />
+              <FoodItem image={drink2} meal="Drink" />
+              <FoodItem image={drink3} meal="Drink" noBorder={true} />
             </div>
             <div className="second-column">
-              {/* <FoodItem image={six} meal="Drink" /> */}
-              <FoodItem image={five} meal="Drink" />
-              <FoodItem image={seven} meal="Drink" noBorder={true} />
-              {/* <FoodItem image={eight} meal="Drink" noBorder={true} /> */}
+              <FoodItem image={drink4} meal="Drink" />
             </div>
           </div>
         )}
@@ -112,13 +116,13 @@ const Menu = () => {
           <div className="menu-content" id="desserts">
             <div className="first-column">
               {/* <FoodItem image={four} meal="Desserts" /> */}
-              <FoodItem image={one} meal="Desserts" />
+              <FoodItem image={desert1} meal="Desserts" />
               {/* <FoodItem image={three} meal="Desserts" /> */}
-              <FoodItem image={two} meal="Desserts" noBorder={true} />
+              <FoodItem image={desert2} meal="Desserts" noBorder={true} />
             </div>
             <div className="second-column">
               <FoodItem image={five} meal="Desserts" />
-              <FoodItem image={seven} meal="Desserts" noBorder={true} />
+              <FoodItem image={desert3} meal="Desserts" noBorder={true} />
               {/* <FoodItem image={six} meal="Desserts" /> */}
               {/* <FoodItem image={eight} meal="Desserts" noBorder={true} /> */}
             </div>
@@ -166,7 +170,7 @@ const Menuu = styled.div`
       margin: 0 10px 10px;
       transition: color 0.3s ease;
       color: white;
-      transition: all .1s ease;
+      transition: all 0.1s ease;
 
       &:hover {
         color: #eaa023;
