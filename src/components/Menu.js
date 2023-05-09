@@ -20,7 +20,7 @@ import desert2 from "../img/menu/desert2.jpg";
 import desert3 from "../img/menu/desert3.jpg";
 import lunch4 from "../img/menu/lunch3.jpg";
 
-const Menu = () => {
+const Menu = ({ menuRef }) => {
   const [activeTab, setActiveTab] = useState("lunch");
 
   const handleTabClick = (tabName) => {
@@ -28,7 +28,7 @@ const Menu = () => {
   };
 
   return (
-    <Menuu>
+    <Menuu ref={menuRef}>
       <div className="menu-title">
         <h3>Order Now</h3>
         <h2>Our Menu</h2>

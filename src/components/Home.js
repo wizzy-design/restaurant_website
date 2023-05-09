@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import homeBg from "../img/home-bg.jpg";
 
-const Home = () => {
+const Home = ({ handleClick }) => {
   return (
     <Page imageUrl={homeBg}>
       <PageContent>
@@ -12,7 +12,9 @@ const Home = () => {
             excepturi nostrum placeat atque maxime?
           </p>
         </div>
-        <button className="btn">Our Menu</button>
+        <button className="btn" onClick={handleClick}>
+          Our Menu
+        </button>
       </PageContent>
     </Page>
   );
