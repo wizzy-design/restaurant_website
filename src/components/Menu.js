@@ -29,7 +29,7 @@ const Menu = ({ menuRef }) => {
 
   return (
     <Menuu ref={menuRef}>
-      <div className="menu-title">
+      <div className="my-title">
         <h3>Order Now</h3>
         <h2>Our Menu</h2>
       </div>
@@ -134,24 +134,8 @@ const Menu = ({ menuRef }) => {
 };
 
 const Menuu = styled.div`
-  padding: 3rem 6rem 5rem 6rem;
+  padding: 3rem 6rem 2rem 6rem;
   background-color: #0c1023; // #191f3a
-
-  .menu-title {
-    padding: 0 0 3rem 0;
-    h2 {
-      font-family: "Poppins", sans-serif;
-      text-align: center;
-      font-size: 35px;
-    }
-
-    h3 {
-      color: #eaa023;
-      font-family: "Dancing Script", cursive;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  }
 
   .menu-tabs {
     padding: 0 15px;
@@ -183,7 +167,7 @@ const Menuu = styled.div`
   }
 
   .menu-contents {
-    margin: 2rem 0;
+    margin: 1rem 0 2rem 0;
 
     .menu-content {
       display: flex;

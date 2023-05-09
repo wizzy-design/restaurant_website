@@ -4,7 +4,7 @@ import experience from "../img/about-img.jpg";
 const AboutUs = () => {
   return (
     <About>
-      <div className="about-title">
+      <div className="my-title">
         <h3>Our Story</h3>
         <h2>About Us</h2>
       </div>
@@ -54,26 +54,11 @@ const About = styled.div`
   /* min-height: 100vh; */
   background-color: #0c1023; // #191f3a
 
-  .about-title {
-    padding: 0 0 3rem 0;
-    h2 {
-      font-family: "Poppins", sans-serif;
-      text-align: center;
-      font-size: 35px;
-    }
-
-    h3 {
-      color: #eaa023;
-      font-family: "Dancing Script", cursive;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  }
-
   .about-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 1rem;
 
     .write-up {
       width: 70%;

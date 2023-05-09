@@ -9,7 +9,7 @@ import four from "../img/testimonials/4.jpg";
 const Testimonials = () => {
   return (
     <Testemony>
-      <div className="testimony-title">
+      <div className="my-title">
         <h3>Testimonials</h3>
         <h2>Some Feedbacks</h2>
       </div>
@@ -28,22 +28,6 @@ const Testimonials = () => {
 const Testemony = styled.div`
   padding: 3rem 6rem 5rem 6rem;
   background-color: #0c1023; // #191f3a
-
-  .testimony-title {
-    padding: 0 0 4rem 0;
-    h2 {
-      font-family: "Poppins", sans-serif;
-      text-align: center;
-      font-size: 35px;
-    }
-
-    h3 {
-      color: #eaa023;
-      font-family: "Dancing Script", cursive;
-      font-size: 1.5rem;
-      text-align: center;
-    }
-  }
 
   .cards{
     display: flex;

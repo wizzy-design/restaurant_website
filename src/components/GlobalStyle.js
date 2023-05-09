@@ -62,6 +62,23 @@ const GlobalStyle = createGlobalStyle`
     color: white;
   }
 
+  .my-title{
+    padding: 0 0 2.5rem 0;
+    h2 {
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      font-size: 35px;
+    }
+
+    h3 {
+      color: #eaa023;
+      font-family: "Dancing Script", cursive;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+  
+  }
+
 /* Scrollbar */
 
   * {

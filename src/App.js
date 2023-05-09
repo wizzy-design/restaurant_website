@@ -5,7 +5,7 @@ import Home from "./components/Home";
 import AboutUs from "./components/AboutUs";
 import Menu from "./components/Menu";
 import Testimonials from "./components/Testimonials";
-// import Team from "./components/Team";
+import Team from "./components/Team";
 // import Contact from "./components/Contact";
 import { useRef } from "react";
 
@@ -34,6 +34,7 @@ function App() {
       <AboutUs />
       <Menu menuRef={menuRef} />
       <Testimonials />
+      <Team />
 
       {/* Router that navigates pages */}
       {/* <Routes location={location} key={location.pathname}>
