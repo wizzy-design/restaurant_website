@@ -6,13 +6,13 @@ import AboutUs from "./components/AboutUs";
 import Menu from "./components/Menu";
 import Testimonials from "./components/Testimonials";
 import Team from "./components/Team";
-// import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import { useRef } from "react";
+// Styled-component
+import styled from "styled-components";
 
 //Router
 // import { Routes, Route, useLocation } from "react-router-dom";
-// Styled-component
-import styled from "styled-components";
 
 function App() {
   // const location = useLocation();
@@ -22,7 +22,7 @@ function App() {
     menuRef.current.scrollIntoView({
       behavior: "smooth",
       block: "start",
-      inline: "nearest"
+      inline: "nearest",
     });
   };
 
@@ -35,6 +35,7 @@ function App() {
       <Menu menuRef={menuRef} />
       <Testimonials />
       <Team />
+      <Footer />
 
       {/* Router that navigates pages */}
       {/* <Routes location={location} key={location.pathname}>

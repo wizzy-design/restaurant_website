@@ -37,21 +37,27 @@ const Card = styled.div`
     top: 90%;
     width: 90%;
     border-radius: 8px;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     background-color: #191f3a;
 
     h3,
-    h4{
-        color: white;
-        font-family: "Poppins", sans-serif;
+    h4 {
+      font-family: "Poppins", sans-serif;
     }
 
-    h4{
-        padding: .4rem 0;
-        font-size: .9rem;
-        font-weight: lighter;
+    h3 {
+      color: white;
     }
 
+    h4 {
+      color: #c8c8c8;
+    }
+
+    h4 {
+      padding: 0.4rem 0;
+      font-size: 0.9rem;
+      font-weight: lighter;
+    }
   }
 `;
 
