@@ -1,6 +1,7 @@
 {
   "files": {
-    "main.js": "/restaurant_website/static/js/main.747170c8.js",
+    "main.css": "/restaurant_website/static/css/main.ab63bd96.css",
+    "main.js": "/restaurant_website/static/js/main.bd3e6f67.js",
     "static/js/496.5f73d038.chunk.js": "/restaurant_website/static/js/496.5f73d038.chunk.js",
     "static/media/drink3.jpg": "/restaurant_website/static/media/drink3.3c8a377ece1ffa8e1a33.jpg",
     "static/media/desert3.jpg": "/restaurant_website/static/media/desert3.044d11765c73f80b41a3.jpg",
@@ -10,9 +11,15 @@
     "static/media/desert1.jpg": "/restaurant_website/static/media/desert1.2157649f4832c9aaddfb.jpg",
     "static/media/drink4.jpg": "/restaurant_website/static/media/drink4.eda468f6e8bb93a162d9.jpg",
     "static/media/home-bg.jpg": "/restaurant_website/static/media/home-bg.fa55a3fdf394e0525464.jpg",
+    "static/media/fa-solid-900.ttf": "/restaurant_website/static/media/fa-solid-900.4a2cd718d7031b732e76.ttf",
+    "static/media/footer-bg.jpg": "/restaurant_website/static/media/footer-bg.10c466a27d5b5b7ece6d.jpg",
+    "static/media/fa-brands-400.ttf": "/restaurant_website/static/media/fa-brands-400.150de8eaa454d669c405.ttf",
     "static/media/lunch3.jpg": "/restaurant_website/static/media/lunch3.4f750c25aa1b999e77c8.jpg",
+    "static/media/fa-solid-900.woff2": "/restaurant_website/static/media/fa-solid-900.bb975c966c37455a1bc3.woff2",
     "static/media/about-img.jpg": "/restaurant_website/static/media/about-img.141c9fa5bbd538fcac5a.jpg",
+    "static/media/fa-brands-400.woff2": "/restaurant_website/static/media/fa-brands-400.e033a13ee751afc1860c.woff2",
     "static/media/4.jpg": "/restaurant_website/static/media/4.3381be6727b1255f0390.jpg",
+    "static/media/fa-regular-400.ttf": "/restaurant_website/static/media/fa-regular-400.d87474231f4192884802.ttf",
     "static/media/1.jpg": "/restaurant_website/static/media/1.d10c25732073445f7ba6.jpg",
     "static/media/3.jpg": "/restaurant_website/static/media/3.204a9f848b5ba9e87133.jpg",
     "static/media/2.jpg": "/restaurant_website/static/media/2.4454bfdd993bae9a9a2c.jpg",
@@ -20,11 +27,16 @@
     "static/media/8.jpg": "/restaurant_website/static/media/8.598f54b6c5c938c8ebc3.jpg",
     "static/media/5.jpg": "/restaurant_website/static/media/5.f52737d2ccf5754e84e5.jpg",
     "static/media/6.jpg": "/restaurant_website/static/media/6.53ab1742b6c5b7e9f5f5.jpg",
+    "static/media/fa-regular-400.woff2": "/restaurant_website/static/media/fa-regular-400.3223dc79c1adee56370b.woff2",
+    "static/media/fa-v4compatibility.ttf": "/restaurant_website/static/media/fa-v4compatibility.0e3a648be390bd8cb094.ttf",
+    "static/media/fa-v4compatibility.woff2": "/restaurant_website/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/restaurant_website/index.html",
-    "main.747170c8.js.map": "/restaurant_website/static/js/main.747170c8.js.map",
+    "main.ab63bd96.css.map": "/restaurant_website/static/css/main.ab63bd96.css.map",
+    "main.bd3e6f67.js.map": "/restaurant_website/static/js/main.bd3e6f67.js.map",
     "496.5f73d038.chunk.js.map": "/restaurant_website/static/js/496.5f73d038.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.747170c8.js"
+    "static/css/main.ab63bd96.css",
+    "static/js/main.bd3e6f67.js"
   ]
 }
