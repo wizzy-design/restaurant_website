@@ -1,40 +1,66 @@
 import styled from "styled-components";
 import logo from "../img/logo.png";
 // Link
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
+import { useEffect, useState } from "react";
 
 const Nav = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
+  const handleClick = () => {
+    setScrolled(true);
+  };
+
   return (
-    <Root>
-      <Logo>
-        {/* <Link to="#"> */}
-        <img src={logo} alt="The logo" />
-        {/* </Link> */}
-      </Logo>
+    <Root scrolled={scrolled}>
+      <div>
+        <Link to="home">
+          <img src={logo} alt="The logo" />
+        </Link>
+      </div>
 
-      <Burger>
+      {/* <Burger>
         <span></span>
-      </Burger>
+      </Burger> */}
 
-      <Navv>
+      <Navv scrolled={scrolled}>
         <ul>
-          <li className="nav-item">
-            <Link to="/home">Home</Link>
+          <li className="nav-item" onClick={handleClick}>
+            <Link to="about">About</Link>
           </li>
-          <li className="nav-item">
-            <Link to="/about">About</Link>
+          <li className="nav-item" onClick={handleClick}>
+            <Link to="menu" offset={-30}>
+              Menu
+            </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/menu">Menu</Link>
+          <li className="nav-item" onClick={handleClick}>
+            <Link to="testimonials" offset={-30}>
+              Testimonials
+            </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/testimonials">Testimonials</Link>
+          <li className="nav-item" onClick={handleClick}>
+            <Link to="team" offset={-30}>
+              Team
+            </Link>
           </li>
-          <li className="nav-item">
-            <Link to="/team">Team</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/contact">Contact</Link>
+          <li className="nav-item" onClick={handleClick}>
+            <Link to="contact">Contact</Link>
           </li>
         </ul>
       </Navv>
@@ -44,64 +70,45 @@ const Nav = () => {
 
 // Styled components
 const Root = styled.div`
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: black;
-`;
-
-const Logo = styled.div`
-  background-color: black;
-`;
-
-const Burger = styled.button`
-  display: flex;
-  height: 34px;
-  width: 44px;
-  margin-right: 15px;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
   align-items: center;
-  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem 10rem;
+  background-color: ${({ scrolled }) => (scrolled ? "#0c1023" : "transparent")};
+  transition: background-color 0.3s ease-in-out;
 
-  span {
-    height: 2px;
-    width: 30px;
-    display: block;
-    background-color: white;
-    position: relative;
-  }
-
-  span::before,
-  span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: white;
-  }
-
-  span::before {
-    transform: translateY(-8px);
-  }
-
-  span::after {
-    transform: translateY(8px);
-  }
 `;
+
+// const Burger = styled.button`
+// `;
 
 const Navv = styled.nav`
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 280px;
-  background-color: #191f3a;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-  overflow-y: auto;
-  padding: 80px 0 40px;
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    li {
+      text-decoration: none;
+      color: rgb(187, 183, 183);
+      font-family: "Poppins", sans-serif;
+      font-size: 15px;
+      margin: 0 1rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      border-bottom: ${({ scrolled }) =>
+        scrolled ? ".1px dotted #eaa023" : "none"};
+
+      &:hover {
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
 `;
 
 export default Nav;

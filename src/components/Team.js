@@ -22,7 +22,7 @@ const Team = () => {
 };
 
 const Teamm = styled.div`
-  padding: 3rem 6rem 5rem 6rem;
+  padding: 3rem 6rem 7rem 6rem;
   background-color: #0c1023;
 
   .chefs{

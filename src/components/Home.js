@@ -32,6 +32,7 @@ const zoomInOut = keyframes`
 
 // Styled components
 const Page = styled.div`
+  z-index: 1;
   position: relative;
   height: 100vh;
   background-position: center;
