@@ -148,7 +148,7 @@ const Root = styled.div`
   }
 
   @media (max-width: 751px) {
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 5rem 1.5rem 2.5rem;
     .burger {
       right: ${({ opened }) => (opened ? "30%" : "none")};
     }
