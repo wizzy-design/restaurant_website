@@ -179,6 +179,21 @@ const Menuu = styled.div`
       }
     }
   }
+
+  @media (max-width: 767px) {
+    padding: 3rem 2rem 2rem 2rem;;
+
+    .menu-contents {
+      .menu-content {
+        gap: 0;
+        flex-direction: column;
+        .first-column,
+        .second-column {
+          width: 100%;
+        }
+      }
+    }
+  }
 `;
 
 export default Menu;

@@ -36,7 +36,7 @@ function App() {
         <Home handleClick={handleClick} />
       </Element>
       <Element name="about">
-        <AboutUs />
+        <AboutUs handleClick={handleClick} />
       </Element>
       <Element name="menu">
         <Menu menuRef={menuRef} />

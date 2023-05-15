@@ -15,11 +15,13 @@ const Testimonials = () => {
       </div>
 
       <div className="cards">
-        <TweetCards name="Wisdom Ochei" job="Head Chef" img={four} />
-        {/* <TweetCards name="Daniel David" job="Designer cook" img={five} /> */}
-        <TweetCards name="Mrs Baluu" job="Food specialist" img={one} />
-        <TweetCards name="Chi chi" job="Food specialist" img={two} />
-        {/* <TweetCards name="Daniel David" job="Food specialist" img={three} /> */}
+        <div>
+          <TweetCards name="Wisdom Ochei" job="Head Chef" img={four} />
+          {/* <TweetCards name="Daniel David" job="Designer cook" img={five} /> */}
+          <TweetCards name="Mrs Baluu" job="Food specialist" img={one} />
+          <TweetCards name="Chi chi" job="Food specialist" img={two} />
+          {/* <TweetCards name="Daniel David" job="Food specialist" img={three} /> */}
+        </div>
       </div>
     </Testemony>
   );
@@ -27,11 +29,25 @@ const Testimonials = () => {
 
 const Testemony = styled.div`
   padding: 3rem 6rem 5rem 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* padding: 3rem 2rem 5rem 2rem; */
   background-color: #0c1023; // #191f3a
 
-  .cards{
+  @media (max-width: 911px) {
+    padding: 3rem 2rem 5rem 2rem;
+
+    /* .cards {
+      transform: none;
+    } */
+  }
+
+  .cards {
     display: flex;
-    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* transform: translate(70px); */
   }
 `;
 

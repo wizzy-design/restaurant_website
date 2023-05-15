@@ -21,11 +21,20 @@ const Card = styled.div`
   align-items: center;
   margin: 0 1rem;
 
+  @media (max-width: 1078px){
+    margin: 2rem 1rem;
+  }
+
   .img {
     img {
-      border-radius: 6px;
+      border-radius: 8px;
       max-height: 417px;
       max-width: 338px;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: skewY(2deg);
+      }
     }
   }
 
@@ -39,6 +48,9 @@ const Card = styled.div`
     border-radius: 8px;
     padding: 0.5rem 0;
     background-color: #191f3a;
+    transition: all 0.5s ease;
+    pointer-events: none;
+    transform: translateY(10%);
 
     h3,
     h4 {
@@ -58,6 +70,11 @@ const Card = styled.div`
       font-size: 0.9rem;
       font-weight: lighter;
     }
+  }
+
+  &:hover .tag-bar {
+    transform: translateY(-15px);
+    background-color: #eaa023;
   }
 `;
 

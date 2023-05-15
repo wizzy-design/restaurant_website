@@ -1,7 +1,8 @@
 import styled, { keyframes } from "styled-components";
 import experience from "../img/about-img.jpg";
+// import { Link } from "react-scroll";
 
-const AboutUs = () => {
+const AboutUs = ({ handleClick }) => {
   return (
     <About>
       <div className="my-title">
@@ -24,7 +25,13 @@ const AboutUs = () => {
             expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Natus, illum!
           </p>
-          <button className="btn">Check Our Menu</button>
+          {/* <Link to="menu"> */}
+          <div className="button">
+            <button className="btn" onClick={handleClick}>
+              Check Our Menu
+            </button>
+          </div>
+          {/* </Link> */}
         </div>
 
         <div className="image">
@@ -111,6 +118,41 @@ const About = styled.div`
       left: calc(50% - 50px);
       top: calc(50% - 50px);
       animation: ${spin} 10s linear infinite;
+    }
+  }
+
+  @media (max-width: 900px){
+    padding: 5rem 3rem;
+  } 
+
+  @media (max-width: 767px) {
+
+    .my-title {
+      padding-bottom: 2rem;
+    }
+
+    .about-content {
+      flex-direction: column;
+      padding-top: 0;
+
+      .write-up {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+
+        h2 {
+          font-size: 26px;
+        }
+
+        p {
+          width: 100%;
+        }
+      }
+
+      .image {
+        margin-top: 2rem;
+        width: 90%;
+      }
     }
   }
 `;

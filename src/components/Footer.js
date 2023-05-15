@@ -55,6 +55,16 @@ const Footerr = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
 
+  @media (max-width: 720px){
+    padding: 3rem 2rem 1.5rem 2rem;
+  }
+
+  @media (max-width: 662px){
+    .details{
+      flex-direction: column;
+    }
+  }
+
   .details {
     display: flex;
     justify-content: space-around;

@@ -39,7 +39,7 @@ const Page = styled.div`
   background-size: cover;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
     ),
     url(${(props) => props.imageUrl});
@@ -57,15 +57,37 @@ const PageContent = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: hidden;
+  width: 100%;
 
   .write-ups {
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    align-items: center;
 
     h1 {
       font-size: 60px;
       font-family: "Dancing Script", cursive;
       line-height: 75px;
       margin: 0 0 5px;
+    }
+
+    p {
+      text-align: center;
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .write-ups {
+      h1 {
+        font-size: 50px;
+        line-height: 65px;
+      }
+
+      p {
+        width: 75%;
+      }
     }
   }
 `;

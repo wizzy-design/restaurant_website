@@ -22,14 +22,30 @@ const Team = () => {
 };
 
 const Teamm = styled.div`
+  display: flex;
+  flex-direction: column;
   padding: 3rem 6rem 7rem 6rem;
   background-color: #0c1023;
 
-  .chefs{
+  .chefs {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem 0;
+  }
+
+  @media (min-width: 848px) and (max-width: 1078px) {
+    .chefs {
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+  }
+  
+  @media (max-width: 847px) {
+    .chefs {
+      flex-wrap: wrap;
+      justify-content: flex-center;
+    }
   }
 `;
 
