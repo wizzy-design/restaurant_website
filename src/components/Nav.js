@@ -184,7 +184,32 @@ const Navv = styled.nav`
     }
   }
 
-  @media (max-width: 1024px) {
+  @media (min-width: 0px) and (max-width: 475px) {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 210px;
+    background-color: #191f3a;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    overflow-y: hidden;
+    transition: all 0.5s ease;
+    transform: ${({ opened }) =>
+      opened ? "translateX(0%)" : "translateX(100%)"};
+    transition: transform 0.5s ease;
+
+    ul {
+      flex-direction: column;
+      padding: 10rem 1rem;
+
+      li {
+        font-size: 1.5rem;
+        line-height: 6rem;
+      }
+    }
+  }
+
+  @media (min-width: 475px) and (max-width: 1024px) {
     position: fixed;
     right: 0;
     top: 0;
