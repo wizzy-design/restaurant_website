@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/restaurant_website/static/css/main.ab63bd96.css",
-    "main.js": "/restaurant_website/static/js/main.9fec6bef.js",
+    "main.js": "/restaurant_website/static/js/main.b4b7fd7f.js",
     "static/js/496.b942b2c4.chunk.js": "/restaurant_website/static/js/496.b942b2c4.chunk.js",
     "static/media/drink3.jpg": "/restaurant_website/static/media/drink3.3c8a377ece1ffa8e1a33.jpg",
     "static/media/desert3.jpg": "/restaurant_website/static/media/desert3.044d11765c73f80b41a3.jpg",
@@ -32,11 +32,11 @@
     "static/media/fa-v4compatibility.woff2": "/restaurant_website/static/media/fa-v4compatibility.68577e40f3e70067b5da.woff2",
     "index.html": "/restaurant_website/index.html",
     "main.ab63bd96.css.map": "/restaurant_website/static/css/main.ab63bd96.css.map",
-    "main.9fec6bef.js.map": "/restaurant_website/static/js/main.9fec6bef.js.map",
+    "main.b4b7fd7f.js.map": "/restaurant_website/static/js/main.b4b7fd7f.js.map",
     "496.b942b2c4.chunk.js.map": "/restaurant_website/static/js/496.b942b2c4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab63bd96.css",
-    "static/js/main.9fec6bef.js"
+    "static/js/main.b4b7fd7f.js"
   ]
 }
