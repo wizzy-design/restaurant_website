@@ -6,10 +6,11 @@ import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
 
 const Nav = () => {
-  const [scrolled, setScrolled] = useState(false);
-  const [opened, setOpened] = useState(false);
+  const [scrolled, setScrolled] = useState(false); // To know when the page has scrolled or not.
+  const [opened, setOpened] = useState(false); // By default, the vertical navigation bar isn't opened
 
   useEffect(() => {
+    // HandleScroll helps transform the background-color of the navigation bar when we scroll vertically
     const handleScroll = () => {
       const isScrolled = window.scrollY > 0;
       if (isScrolled !== scrolled) {
@@ -25,10 +26,12 @@ const Nav = () => {
   }, [scrolled]);
 
   const handleClick = () => {
+    // Sets the color of the background of navigation to blue when link is clicked.
     setScrolled(true);
   };
 
   const handleBurgerClick = () => {
+    // Toggles the vertical navigation bar when burger icon is clicked.
     setOpened(!opened);
   };
 
@@ -49,25 +52,29 @@ const Nav = () => {
       <Navv scrolled={scrolled} opened={opened}>
         <ul>
           <li className="nav-item" onClick={handleClick}>
-            <Link to="about">About</Link>
+            <Link onClick={handleBurgerClick} to="about">
+              About
+            </Link>
           </li>
           <li className="nav-item" onClick={handleClick}>
-            <Link to="menu" offset={-30}>
+            <Link onClick={handleBurgerClick} to="menu" offset={-30}>
               Menu
             </Link>
           </li>
           <li className="nav-item" onClick={handleClick}>
-            <Link to="testimonials" offset={-30}>
+            <Link onClick={handleBurgerClick} to="testimonials" offset={-30}>
               Testimonials
             </Link>
           </li>
           <li className="nav-item" onClick={handleClick}>
-            <Link to="team" offset={-30}>
+            <Link onClick={handleBurgerClick} to="team" offset={-30}>
               Team
             </Link>
           </li>
           <li className="nav-item" onClick={handleClick}>
-            <Link to="contact">Contact</Link>
+            <Link onClick={handleBurgerClick} to="contact">
+              Contact
+            </Link>
           </li>
         </ul>
       </Navv>
@@ -185,10 +192,17 @@ const Navv = styled.nav`
     width: 280px;
     background-color: #191f3a;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
-    overflow-y: auto;
+    overflow-y: hidden;
+    /* overflow-y: auto; */
     transition: all 0.5s ease;
     transform: ${({ opened }) =>
       opened ? "translateX(0%)" : "translateX(100%)"};
+    /* transform: ${({ opened, animationComplete }) =>
+      opened
+        ? "translateX(0%)"
+        : animationComplete
+        ? "translateX(100%)"
+        : "none"}; */
     transition: transform 0.5s ease;
 
     ul {
